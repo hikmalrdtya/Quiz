@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="loading">
+        <h4>Loading...</h4>
+        <div class="load"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h2>History Quiz</h2>
+        </header>
+       <main> 
+           <div class="notify">
+                <button class="btn-history"><p><a href="home.html">Return</a></p></button>
+                <div class="currentScore">
+                    <p>Skor Anda: 0</p>
+                </div>
+            </div>
+        
+            <div class="history">
+                <p class="question"></p>
+                <div class="hero">
+                    <div class="option1">
+                        <label>
+                            <input type="checkbox" name="check">
+                            <p></p>
+                        </label>
+                    </div>
+                    <div class="option2">
+                        <label>
+                            <input type="checkbox" name="check">
+                            <p></p>
+                        </label>
+                    </div>
+                    <div class="option3">
+                        <label>
+                            <input type="checkbox" name="check"> 
+                            <p></p>
+                        </label>
+                    </div>
+                    <div class="option4">
+                        <label>
+                            <input type="checkbox" name="check"> 
+                            <p></p>
+                        </label>
+                    </div>
+                </div>
+                <p class="score"></p>
+                <button class="submit" onclick="startHistory()"><p>Mulai</p></button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

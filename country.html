@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Country Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="loading">
+        <h4>Loading...</h4>
+        <div class="load"></div>
+    </div>
+
+    <div class="container">
+    	<header>
+    		<h2>Country Quiz</h2>
+    	</header>
+        <main>
+           <div class="notify">
+                <button class="btn-country"><p><a href="home.html">Return</a></p></button>
+                <div class="currentScore">
+                    <p>Skor Anda: 0</p>
+                </div>
+            </div>
+            
+            <div class="country">
+                <p class="question"></p>
+                <div class="option">
+                    <button onclick="checkAnswerCountry()"><p></p></button>
+                    <button onclick="checkAnswerCountry()"><p></p></button>
+                    <button onclick="checkAnswerCountry()"><p></p></button>
+                    <button onclick="checkAnswerCountry()"><p></p></button>
+                </div>
+                <p class="score"></p>
+                <button class="submit" onclick="startCountry()"><p>Mulai</p></button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
